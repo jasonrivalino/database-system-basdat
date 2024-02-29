@@ -1,0 +1,17 @@
+Petunjuk penggunaan file SQL:
+1. Untuk requirements, download MariaDB di device terlebih dahulu
+2. Untuk menggunakan file SQL yang tersedia, bisa dengan tahapan berikut:
+   a) Membuka terminal
+   b) Mengetikkan mariadb -u root -p
+   c) Memasukkan password yang telah dibuat saat instalasi
+   d) Membuat database baru dengan mengetikkan (CREATE DATABASE <nama_database>)
+   e) Masuk ke dalam database dengan mengetikkan (USE <nama_database>)
+   f) Setelah masuk, bisa import file dengan mengetikkan (SOURCE <path_direction_file>)
+      Bentuk Path Direction File: ../Milestone2_Case02_K03_04 (tanpa tanda kutip)
+   g) Database sudah bisa digunakan
+   h) Untuk dump database, bisa dengan mengetikkan (mysqldump -c -u root -p --databases <nama_database> -r <nama_file_dump>;
+
+Dalam pengumpulan Milestone II ini, file yang kelompok kami kumpulkan ada dua yaitu
+file SQL yang sebelum di dump dan yang setelah di dump. Cara menjalankannya kurang lebih
+sama. Hanya saja untuk file yang setelah dump, selalu memerlukan import file SQL dengan SOURCE...
+setiap kali membuka MariaDB.
